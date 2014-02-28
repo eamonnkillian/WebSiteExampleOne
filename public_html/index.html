@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--
+    Created originally on : 19-Feb-2014
+    Author      : Eamonn Killian
+    Web         : www.eamonnkillian.com
+    Contact     : eamonnkillian@gmail.com
+
+    The main html index file for the WebSiteExampleOne site. I created this site to 
+    showcase to a recruitment agency friend of mine how they could upgrade to a more
+    wizzy Jquery based environment. I thought I would share it out as an example for
+    others should they wish to utilise the style/approach ... 
+
+    I've included my key for the Google API call to the map .. Please register with 
+    Google here (https://support.google.com/maps/?hl=en#topic=3032023) to use your own
+    as mine will likely change over time ...
+
+    My thanks to SeizeDesign for the pictures that are from the free for any/commercial use - their site:
+    http://www.seizedesign.com/photography/25-inspiring-stock-photos-of-buildings-free-for-commercial-use/
+-->
+<html>
+    <head>
+        <title>Web Site Example One</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Place your keywords in here"/>
+        <meta name="viewport" content="width=device-width">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&v1' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7paN8tsWxAiQRstAdrz2gRUkJ7NsTcH0&sensor=true"></script>
+        <script type="text/javascript" src="js/jquery.min.2-1-0.js"></script>
+        <script type="text/javascript" src="js/js_jqueryFile.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div class="logotop">
+                <div class="logofirst"><img src="img/logo.png" alt="" height="100" width="200"></div>
+                <div class="logosecond"><a href="#"><img src="img/cloud-download.png" alt="" height="35" width="50" />
+                        <br>Download our Brochure</a>
+                </div>
+            </div>     
+            <div id="wholePage">
+                <div class="firstBanner">
+                    <div class="centerDiv">Place Your Strapline in Here</div>
+                </div>
+                <div class="secondBanner">
+                    <div class="secondCenterDiv-A">
+                        <img src="img/guerkin.jpg" alt="" height="350" width="200"/>
+                    </div>
+                    <div class="secondCenterDiv-B">
+                        <div class="secondCenterDiv-C">
+                            Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>, sed do eiusmod tempor incididunt 
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        </div>
+                    </div>
+                </div>
+                <div class="thirdBanner">
+                    <div class="thirdCenterDiv-A">
+                        <div class="thirdCenterDiv-B">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                            consequat. Duis aute irure dolor in <strong>reprehenderit in voluptate</strong> velit esse cillum dolore eu fugiat nulla 
+                            pariatur. 
+                        </div>
+                    </div>
+                    <div class="thirdCenterDiv-C">
+                        <img src="img/lloyds.jpg" alt="" height="350" width="200" />
+                    </div>
+                </div>
+                <div class="secondBanner">
+                    <div class="secondCenterDiv-A">
+                        <img src="img/steelbuilding.jpg" alt="" height="350" width="200"/>
+                    </div>
+                    <div class="secondCenterDiv-B">
+                        <div class="secondCenterDiv-C">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                            magna aliqua. Ut <strong>enim ad minim veniam</strong>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                            consequat. Duis aute irure dolor in <strong>reprehenderit in voluptate</strong> velit esse cillum dolore eu fugiat nulla 
+                            pariatur:
+                            <div class="wse1-topList">
+                                <a href="#" class="wse1-button grey">Button#1</a>
+                                <a href="#" class="wse1-button grey">Button#2</a>
+                                <a href="#" class="wse1-button grey">Button#3</a>
+                                <a href="#" class="wse1-button grey">Button#4</a>
+                                <a href="#" class="wse1-button grey">Button#5</a>
+                                <a href="#" class="wse1-button grey">Button#6</a>
+                                <a href="#" class="wse1-button grey">Button#7</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer"> 
+                    <div id="lhsFooter">&copy; Eamonn Killian</div>
+                    <div id="rhsFooter">+44 7896 103881</div>
+                </div>
+
+            </div>
+            <!-- 
+            //
+            //   We need to create a menu system so that people can navigate the site easily ... 
+            //   My eternal thanks to Erol Mujak who on the 30 Apr 2013 placed an article providing 
+            //   tutorial instructions on how to deliver a "Sticky Menu" for navigation on to 
+            //   http://webdesign.tutsplus.com/articles/create-a-quick-sticky-menu--webdesign-12120
+            //
+            -->
+
+
+            <div class="toolbar-wrapp">
+                <div class="sticky-toolbar">
+                    <ul>
+                        <li class="glyph" id="help">
+                            <a href="index.html" title="Go home" data-icon="&#8962;"></a>
+                        </li>
+                        <li class="glyph" id="support">
+                            <a href="#" title="Examine some Things" data-icon="&#59392;"></a>
+                        </li>
+                        <li class="glyph" id="team">
+                            <a href="#" title="Meet our team" data-icon="&#128101;"></a>
+                        </li>
+                        <li class="glyph" id="settings">
+                            <a href="#" title="Tweet about us" data-icon="&#62217;" onClick="javascript:window.open('https://twitter.com/intent/tweet?text=Check out the all new example web site from @eamonnkillian','Twitter','height=400,width=650');"></a>       
+                        </li>
+                        <li class="glyph" id="whitepapers">
+                            <a href="#" class="whitePapers" title="Read our Whitepapers" data-icon="&#128214;"></a>
+                        </li>
+                        <li class="glyph" id="contactus">
+                            <a href="#" class="contactUs" title="Contact Us" data-icon="&#9993;"></a>
+                        </li>
+                    </ul>
+                </div><!--/ sticky-toolbar-->
+
+                <div class="popup">
+                    <div class="arrow"></div>
+                    <ul>
+                        <li><a href="#" class="specialisms">Specialism1</a></li>
+                        <li><a href="#" class="specialisms">Specialism2</a></li>
+                        <li><a href="#" class="specialisms">Specialism3</a></li>
+                        <li><a href="#" class="specialisms">Specialism4</a></li>
+                        <li><a href="#" class="specialisms">Specialism5</a></li>
+                        <li><a href="#" class="specialisms">Specialism6</a></li>
+                        <li><a href="#" class="specialisms">Specialism7</a></li>
+                    </ul>
+                </div><!--/ popup-->
+
+                <div class="popup1">
+                    <div class="arrow1"></div>
+                    <ul>
+                        <li><a href="#" class="meetTheTeamA">TeamMember1</a></li>
+                        <li><a href="#" class="meetTheTeamB">TeamMember2</a></li>
+                        <li><a href="#" class="meetTheTeamC">TeamMember3</a></li>
+                        <li><a href="#" class="meetTheTeamD">TeamMember4</a></li>
+                        <li><a href="#" class="meetTheTeamE">TeamMember5</a></li>
+                        <li><a href="#" class="meetTheTeamF">TeamMember6</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+</html>
